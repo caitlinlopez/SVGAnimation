@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="svg.css">
+
+    <title>
+        animation
+    </title>
+  </head>
+  <body>
+    <svg width="1300" height="595">
+      <!--room-->
+      <line x1="275" y1="45" x2="275" y2="305" stroke="white" stroke-width="1"/>
+      <line x1="1075" y1="45" x2="1075" y2="305" stroke="white" stroke-width="1"/>
+      <line x1="275" y1="305" x2="1075" y2="305" stroke="white" stroke-width="1"/>
+      <line x1="275" y1="305" x2="75" y2="505" stroke="white" stroke-width="1"/>
+      <line x1="1275" y1="505" x2="1075" y2="305" stroke="white" stroke-width="1"/>
+      <!--lightbulb-->
+      <line x1="662" y1="25" x2="662" y2="125" stroke="white" stroke-width="1"/>
+      <rect x="650" y="125" width="25" height="40" rx="8" ry="8" stroke="white"/>
+      <circle cx="662.5" cy="165" r="25" fill="black" stroke="white" stroke-dasharray="105, 25, 30">
+        <animate attributeName="fill" from="black" to="white" dur="5s" begin="click"/>
+      </circle>
+      <rect x="650" y="126" width="25" height="9" rx="3" ry="3" stroke="white"/>
+    </svg>
+  </body>
+</html>
