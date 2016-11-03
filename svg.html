@@ -20,9 +20,9 @@
       <line x1="1325" y1="555" x2="1075" y2="305" stroke="white" stroke-width="1"/>
       <!--door-->
       <polygon points="175 195 175 405 85 495 85 285" stroke="white" stroke-width="1"></polygon>
-      <polygon points="175 195 175 405 85 495 85 285" stroke="white" stroke-width="1">
+      <a href="out.html"><polygon points="175 195 175 405 85 495 85 285" stroke="white" stroke-width="1">
         <animate attributeName="points" from="175 195 175 405 85 495 85 285" to="195 215 195 425 85 495 85 285" dur="2s" begin="mouseover" fill="freeze"/>
-      </polygon>
+      </polygon></a>
       <!--tv-->
       <polygon points="600 315 730 315 720 305 610 305" stroke="white" stroke-width="1"/>
       <polygon points="600 315 730 315 730 320 600 320" stroke="white" stroke-width="1"/>
@@ -33,10 +33,29 @@
       <circle cx="665" cy="232" r="10" fill="black" stroke="white"/>
       <rect x="610" y="230" width="110" height="80" rx="5" ry="5" stroke="white" stroke-width="1"/>
       <rect x="615" y="235" width="85" height="70" rx="5" ry="5" stroke="white" stroke-width="1"/>
-      <circle cx="710" cy="295" r="6" fill="black" stroke="white"/>
-      <circle cx="710" cy="280" r="5" fill="black" stroke="white"/>
+      <!--on button-->
+      <circle cx="710" cy="295" r="6" stroke="white">
+        <animate id="on" attributeName="x" from="0" to="0" dur="0.00001s" begin="click"/>
+      </circle>
+      <image x="616" y="185" height="180px" width="83px" xlink:href="static.gif" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.0000001s" fill="freeze" begin="on.end"/>
+      </image>
+      <image x="616" y="175" height="180px" width="83px" xlink:href="static.gif" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.0000001s" fill="freeze" begin="on.end"/>
+      </image>
+      <!--off button-->
+      <circle cx="710" cy="280" r="5" fill="black" stroke="white">
+        <animate id="off" attributeName="x" from="0" to="0" dur="0.00001s" begin="click"/>
+      </circle>
+      <rect x="615" y="235" width="85" height="70" rx="5" ry="5" stroke="white" stroke-width="1" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.0000001s" fill="freeze" begin="off.end" repeatCount="indefinite"/>
+      </rect>
       <!--couch-->
       <rect x="510" y="330" width="310" height="100" rx="5" ry="5" stroke="white" stroke-width="1"/>
+      <!--plant-->
+      <!--ellipse cx="310" cy="70" rx="25" ry="30" stroke="white"></ellipse-->
+      <!--ellipse cx="310" cy="50" rx="25" ry="30" stroke="white"></ellipse-->
+      <!--rect x="250" y="50" width="50" height="40" stroke="white"></rect-->
     </svg>
 
     <script src="svg.js"></script>
